@@ -1,0 +1,26 @@
+
+
+<div id="root">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-7">
+        <new-quote v-on:grid-change="get_quotes" ></new-quote>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-10">
+        <h4>Old Quotes:</h4>
+        <quotes v-on:save-edit="update_quote" v-on:delete-row="delete_quote" v-bind:quotes="quotes"></quotes>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<script src="/javascripts/vue_test.js" async></script>
